@@ -17,3 +17,15 @@
   - 데이터베이스를 설계하거나 데이터 처리<br/>
   - Java, PHP, Python 등 프로그래밍 언어 사용 <br/>
   - 프레임 워크 : Node.js, Spring, Django, CodeIgniter<br/>
+  
+  
+  ## HTML
+  
+  <details>
+  <summary>HTML 기본 구조</summary>
+   <div>
+   <br>
+    <p> !DOCTYPE html : 이제부터 처리할 문서는 HTML 문서 </p>
+    
+   </div>
+</details>
