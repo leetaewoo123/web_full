@@ -25,10 +25,13 @@
   <summary>HTML 기본 구조</summary>
    <div>
    <br>
-    <p> !DOCTYPE html : 이제부터 처리할 문서는 HTML 문서 </p>
-    
+    :arrow_right: !DOCTYPE html : 이제부터 처리할 문서는 HTML 문서
+    * head 태그 : 문서 관련 정보 입력, 웹 브라우저 화면에는 보이지 않음, 문서에서 사용할 외부 파일 링크
+    * meta 태그 : 문자 세트 등 문서 정보가 들어 있음, 한글로 된 내용을 표시하기 위해 UTF-8 사용, 다양한 문서 정보를 지정
+    * title 태그 : 문서 제목을 나태냄
+    * body 태그 : 실제 브라우저에 표시될 내용 입력
    </div>
-</details>
+  </details>
 
 
 
