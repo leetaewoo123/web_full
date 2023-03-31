@@ -77,7 +77,7 @@
      :black_small_square: <b>table 태그</b> : 표 전체<br><br>
      :black_small_square: <b>caption 태그</b> : 표 제목<br><br>
      :black_small_square: <b>tr, td, th 태그</b> : tr - 행, td - 열, th - 제목 셀<br><br>
-     :black_small_square: <b>colspan, rowspan 속성</b> : colspan - 밑으로 합침, rowspan - 오른쪽으로 합침<br><br>
+     :black_small_square: <b>rowspan, colspan 속성</b> : rowspan - 밑으로 합침, colspan - 오른쪽으로 합침<br><br>
    </div>
  </details>
  
@@ -132,7 +132,77 @@
      :black_small_square: <b>fieldset 태그</b> : 폼 요소를 그룹으로 묶는 태그<br><br>
      :black_small_square: <b>legend 태그</b> : 그룹으로 묶은 구역에 제목을 붙이는 태그<br><br>
      :black_small_square: <b>label 태그</b> : imput태그와 같은 폼 요소에 레이블을 붙일 때 사용<br><br>
-   </div>
+  
+   <table>
+    <caption>:black_small_square:<b>input 태그 속성</b></caption>
+      <thead>
+        <tr>
+          <th>종류</th>
+          <th>설명</th>
+          <th>필드 속성</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>text</td>
+          <td>한 줄짜리 텍스트 필드, 주로 아이디나 이름, 주소 등</td>
+          <td rowspan="2">size - 길이 필드 <br> maxlength - 최대 문자 수 지정 <br> value(text속성만) - 화면에 표시될 때 텍스트 필드 부분에 보여주는 내용</td>
+        </tr>
+        <tr>
+          <td>password</td>
+          <td>비밀번호 입력 필드</td>
+        </tr>
+        <tr>
+          <td>search</td>
+          <td>검색 필드, 검색 창에 x표시가 되어 검색어 삭제 쉬움</td>
+          <td>-</td>
+        </tr>
+        <tr>
+          <td>url</td>
+          <td>웹 주소 필드</td>
+          <td>-</td>
+        </tr>
+        <tr>
+          <td>email</td>
+          <td>메일 주소 입력 필드, 메일 주소 형식 자동 체크</td>
+          <td>-</td>
+        </tr>
+        <tr>
+          <td>tel</td>
+          <td>전화번호 입력 필드, 사용자 입력을 체크하지는 않음</td>
+          <td>-</td>
+        </tr>
+        <tr>
+          <td>radio</td>
+          <td>여러 항목 중 하나만 선택</td>
+          <td rowspan="2">name - 여러 개 있을 경우 구분을 위해 이름 지정<br> value - 서버에 넘길 값을 지정(필수 속성) <br> checked - 기본으로 선택해 놓을 항목이 있을 때 사용</td>
+        </tr>
+        <tr>
+          <td>checkbox</td>
+          <td>여러 항복 중 둘 이상을 선택</td>
+        </tr>
+        <tr>
+          <td>number</td>
+          <td>숫자 입력 필드, 브라우저에 따라 스핀 박스로 표시</td>
+          <td rowspan="2">min - 최솟값 지정 (기본 최솟값 = 0) <br> max - 최댓값 지정 (기본 최댓값 = 100) <br> step - 숫자 간격을 지정 (기본값 = 1) <br> value - 필드에 표시할 초깃값</td>
+        </tr>
+        <tr>
+          <td>range</td>
+          <td>숫자 입력 필드, 슬라이드 막대를 이용해 숫자 입력</td>
+        </tr>
+        <tr>
+          <td>date, month, week</td>
+          <td>date - yyyy/mm/dd <br> month - yyyy/mm <br> week - 1월 첫째 주 기준 몇번째 주인지 표시</td>
+          <td>-</td>
+        </tr>
+        <tr>
+          <td>time, datetime, datetime-local</td>
+          <td>time - 폼에서 시간을 입력 <br> datetime, datetime-local - 지역에 맞는 날짜와 시간을 함께 입력 가능</td>
+          <td>-</td>
+        </tr>
+      </tbody>
+   </table> 
+  </div>
  </details>
 <br>
 
