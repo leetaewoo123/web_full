@@ -115,7 +115,23 @@
    <br>
      :black_small_square: <b>a 태그</b> : 다른 문서, 혹은 다른 사이트로 바로 연결해 주는 기능<br><br>
      :black_small_square: <b>target 속성</b> : target="blank"로 지정하면 연결된 문서가 새 탭으로 열림<br><br>
-     :black_small_square: <b>href</b> : href="링크할 주소"
+     :black_small_square: <b>href</b> : href="링크할 주소"<br><br>
+   </div>
+ </details>
+ <details>
+  <summary>폼 태그</summary>
+   <div>
+   <br>
+     :black_small_square: <b>form이란_1</b> : 사용자가 정보를 보낼 수 있는 요소, 정보 저장/검색/수정, 데이터베이스 기반 <br><br>
+     :black_small_square: <b>form이란_2</b> : 텍스트 필드나 버튼 같은 폼 형태(HTML태그), 입력한 사용자 정보를 처리하는 것 (서버 프로그래밍) <br><br>
+     :black_small_square: <b>method 속성_get</b> : 256~4096byte 길이 제한이 있고, 사용자가 입력한 내용이 그래로 들어남<br><br>
+     :black_small_square: <b>method 속성_post</b> : 길이 제한이 없고, 내용이 드러나지 않음<br><br>
+     :black_small_square: <b>name 속성</b> : 자바스크립트로 폼을 제어할 때 사용할 폼의 이름을 지정<br><br>
+     :black_small_square: <b>action 속성</b> : form 태그 안의 내용을 처리해 줄 서버 프로그램을 지정<br><br>
+     :black_small_square: <b>target 속성</b> : action 속성에서 지정한 스크립트 파일을 현재 창이 아닌 다른 위치에서 열도록 함<br><br>
+     :black_small_square: <b>fieldset 태그</b> : 폼 요소를 그룹으로 묶는 태그<br><br>
+     :black_small_square: <b>legend 태그</b> : 그룹으로 묶은 구역에 제목을 붙이는 태그<br><br>
+     :black_small_square: <b>label 태그</b> : imput태그와 같은 폼 요소에 레이블을 붙일 때 사용<br><br>
    </div>
  </details>
 <br>
