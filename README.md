@@ -268,9 +268,9 @@
     <summary>Javascript란</summary>
      <div>
      <br>
-       :black_small_square: 웹 요소 제어
-       :black_small_square: 다양한 라이브러리 사용
-       :black_small_square: 웹 애플리케이션 제작
-       :black_small_square: 서버를 구성하고 서버용 프로그램 제작
+       :black_small_square: 웹 요소 제어 <br>
+       :black_small_square: 다양한 라이브러리 사용<br>
+       :black_small_square: 웹 애플리케이션 제작<br>
+       :black_small_square: 서버를 구성하고 서버용 프로그램 제작<br>
      </div>
  </details>
