@@ -131,10 +131,11 @@
      :black_small_square: <b>target 속성</b> : action 속성에서 지정한 스크립트 파일을 현재 창이 아닌 다른 위치에서 열도록 함<br><br>
      :black_small_square: <b>fieldset 태그</b> : 폼 요소를 그룹으로 묶는 태그<br><br>
      :black_small_square: <b>legend 태그</b> : 그룹으로 묶은 구역에 제목을 붙이는 태그<br><br>
-     :black_small_square: <b>label 태그</b> : imput태그와 같은 폼 요소에 레이블을 붙일 때 사용<br><br>
-  
+     :black_small_square: <b>label 태그</b> : input태그와 같은 폼 요소에 레이블을 붙일 때 사용<br><br>
+     :black_small_square: <b>fieldset 태그</b> : 폼 요소를 그룹으로 묶는 태그<br><br>
+ 
    <table>
-    <caption>:black_small_square:<b>input 태그 속성</b></caption>
+    <caption>:black_small_square:<b>input 태그 type 속성</b></caption>
       <thead>
         <tr>
           <th>종류</th>
@@ -192,7 +193,7 @@
         </tr>
         <tr>
           <td>date, month, week</td>
-          <td>date - yyyy/mm/dd <br> month - yyyy/mm <br> week - 1월 첫째 주 기준 몇번째 주인지 표시</td>
+          <td>date - yyyy/mm/dd <br> month - yyyy/mm <br> week - 1월 첫째 주 기준 몇 번째 주인지 표시</td>
           <td>-</td>
         </tr>
         <tr>
@@ -200,8 +201,56 @@
           <td>time - 폼에서 시간을 입력 <br> datetime, datetime-local - 지역에 맞는 날짜와 시간을 함께 입력 가능</td>
           <td>-</td>
         </tr>
+        <tr>
+          <td>submit, reset, button</td>
+          <td>submit - 사용자 입력 내용을 서버로 전송 <br> reset - 사용자 입력 내용 전부 삭제 <br> button - 주로 javascript 실행할 때 사용</td>
+          <td>value - 버튼 표시 내용 지정</td>
+        </tr>
+        <tr>
+          <td>img</td>
+          <td>submit 버튼 대신 이미지 삽입</td>
+          <td>src - 이미지 경로 <br> alt - 대체 텍스트</td>
+        </tr>
+        <tr>
+          <td>file</td>
+          <td>파일 첨부/파일 선택 이나 찾아보기 버튼으로 표시됨</td>
+          <td>-</td>
+        </tr>
+        <tr>
+          <td>hidden</td>
+          <td>화면 상의 폼에는 보이지 않음 <br> 폼에 서버로 전송할 때 서버로 함께 전송되는 요소</td>
+          <td>-</td>
+        </tr>
       </tbody>
-   </table> 
+   </table>
+   
+   <table>
+    <caption>:black_small_square:<b>input 태그 속성</b></caption>
+      <thead>
+        <tr>
+          <th>종류</th>
+          <th>설명</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>autofocus</td>
+          <td>페이지를 불러오자마자 원하는 폼 요소에 마우스 커서 표시</td>
+        </tr>
+        <tr>
+          <td>placeholder</td>
+          <td>입력란에 표시하는 힌트로, 필드를 클릭하면 사라짐</td>
+        </tr>
+        <tr>
+          <td>readonly</td>
+          <td>내용을 보기만 하고 입력하지 못하게 함</td>
+        </tr>
+        <tr>
+          <td>required</td>
+          <td>필수 필드 체크 <br>필수 필드는 브라우저에서 직접 체크하는 것이므로 오류 메시지 내용은 브라우저마다 다름</td>
+        </tr>
+      </tbody>
+   </table>
   </div>
  </details>
 <br>
@@ -213,3 +262,15 @@
 
 ###### HTML <태그명 속성="값" 속성="값" 속성="값"></태그명>
 ###### CSS 선택자{속성:값, 속성:값, 속성:값}
+
+## 3. Javascript
+  <details>
+    <summary>Javascript란</summary>
+     <div>
+     <br>
+       :black_small_square: 웹 요소 제어
+       :black_small_square: 다양한 라이브러리 사용
+       :black_small_square: 웹 애플리케이션 제작
+       :black_small_square: 서버를 구성하고 서버용 프로그램 제작
+     </div>
+ </details>
