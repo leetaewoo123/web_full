@@ -8,10 +8,28 @@
 </head>
 <body>
     <script>
-        var j = prompt("몇 단을 보시겠습니까?")
-        document.write(j+"단 <br><br>");
-        for (i=1; i<=9; i++){
-            document.write(j+"*"+i+"="+j*i+"<br>");
+        var dan = 2;
+        document.write(dan+"단 <br><br>");
+
+        for (i=1; dan<=9; i++){
+            document.write(dan+"*"+i+"="+dan*i+"<br>");
+            
+            if(i==9){
+                dan++;
+                i=0;
+                document.write("<br>");
+                document.write(dan+"단 <br><br>");
+            }
+
+            if (dan==10){
+                break;
+            }
+        }
+        document.write("<p>-----------------------------------------------<p>");
+        for(i=18; i<=89; i++){
+            dan = Math.floor(i/9);
+            var j = i % 9 +1;
+            document.write(dan + 'x' + j + '=' + dan*j + '<br>');
         }
     </script>
 </body>
