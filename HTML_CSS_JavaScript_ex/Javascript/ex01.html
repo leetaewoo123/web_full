@@ -15,6 +15,36 @@
             heading1.style.color = "red";
             alert("영차영차");
         }
+        // var session = prompt("관심세션 선택. 1- 마케팅, 2-개발, 3-디자인");
+        // switch(session){
+        //     case "1":
+        //         document.write('<p>마케팅 세션은 <strong>201호</p>');
+        //         break;
+        //     case "2":
+        //         document.write('<p>개발 세션은 <strong>203호</p>');
+        //         break;
+        //     case "3":
+        //         document.write('<p>디자인 세션은 <strong>205호</p>');
+        //         break;
+        //     default :
+        //         alert("잘못입력했습니다.");
+        //         break;
+        // }
+        var month = prompt("현재 월을 입력하세요. 1~12월");
+        switch(month){
+            case "1": case"2" : case"12":
+                document.write('<p><strong>겨울 입니다.</p>');
+                break;
+            case "3": case"4" : case"5":
+                document.write('<p><strong>봄 입니다.</p>');
+                break;
+            case "6": case"7": case"8":
+                document.write('<p><strong>여름 입니다.</p>');
+                break;
+            case "9": case"10": case"11":
+                document.write('<p><strong>가을 입니다.</p>');
+                break;
+        }
     </script>
     <script src="js/change.js"></script>
 </body>
