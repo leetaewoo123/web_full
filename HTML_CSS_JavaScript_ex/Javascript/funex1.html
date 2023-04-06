@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var sum = function(a,b){
+            return a+b;
+        }
+        document.write(sum+'<br>');
+        document.write('sum type : '+ typeof sum);
+        document.write('<br>');
+        document.write("sum 실행 : "+sum(10,20));
+        var n1 = 10;
+        var n2 = 1.2;
+        var n3 = '100';
+        document.write('<br>');
+        document.write('sum type : '+ typeof n1);
+        document.write('sum type : '+ typeof n2);
+        document.write('sum type : '+ typeof 3);
+
+        // let hi = function(user){
+        //     document.write(user+'님, 안녕하세요.');
+
+        // }
+        // let hi = ueer => document.write(user+'님, 안녕하세요.');
+        // hi("홍길동");
+
+
+        // let sum3 = function(a,b){
+        //     return a+b;
+        // }
+
+        document.write('<p>-----------------------------</p>');
+        let plus = (a,b) => a+b;
+        let minus = (a,b) => a-b;
+        let arr = [plus, minus];
+        arr.push((a,b) => a*b);
+        arr.push((a,b) => a/b);
+        // document.write(plus + ', typeof : '+typeof(plus)+"<br>");
+        // document.write(minus + ', typeof : '+typeof(minus)+"<br>");
+        // document.write(arr[0]+"실행 결과 :" + arr[0](100,200) +"<br>");
+        // document.write(arr[1]+"실행 결과 :" + arr[1](100,200) +"<br>");
+        console.dir(arr);
+        console.dirxml(arr);
+        console.dir(arr[0]);
+        console.dirxml(arr[0]);
+        console.dir(plus);
+        console.dirxml(plus);
+
+        for (let i =0; i<arr.length; i++){
+            document.write(arr[i]+"실행 결과 : " + arr[i](100,200)+"<br>");
+        }
+
+        arr.forEach(function(item, index, array){
+            console.log('item :'+item);
+            console.log('index : ' + index);
+            console.log('array : '+ array);
+        });
+        consloe.dir(arr);
+        consloe.dirxml(arr);
+    </script>
+</body>
+</html>
