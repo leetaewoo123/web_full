@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <img src="img/cup.jpg" alt="cup" id="cup">
+    <img src="img/red.png" alt="red" id="red">
+    <script>
+        var cup = document.querySelector('#cup');
+        cup.onclick = function(event){
+            console.log(this);
+            console.dir(this);
+            console.log('이벤트 유형 : '+event.type
+            +", 이벤트 발생 위치 : "+event.pageX+","+event.pageY);
+        }
+
+        var red = document.querySelector('#red');
+        red.onclick = function(event){
+            console.log(this);
+            console.dir(this);
+            console.log('이벤트 유형 : '+event.type
+            +", 이벤트 발생 위치 : "+event.pageX+","+event.pageY);
+        }
+    </script>
+</body>
+</html>

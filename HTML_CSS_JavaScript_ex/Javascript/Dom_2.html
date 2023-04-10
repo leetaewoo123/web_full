@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div id="container">
+        <h1>Dom을 공부합시다.</h1>
+        <a href="#" onclick="addP(); this.onclick='';">더보기</a>
+        <div id="info"></div>
+    </div>
+    <script>
+        function addP(){
+            var newP = document.createElement('p');
+            var txtNode = document.createTextNode(
+                "DOM은 Document Object Model의 줄임말입니다.");
+            newP.appendChild(txtNode);
+            document.getElementById('info').appendChild(newP);
+        
+            var newImg = document.createElement("img");
+            var srcNode = document.createAttribute('src');
+            var altNode = document.createAttribute('alt');
+            srcNode.value = "img/cup.jpg";
+            altNode.value = "컵 이미지";
+            newImg.setAttributeNode(srcNode);
+            document.getElementById('info').appendChild(newImg);
+        }
+    </script>
+</body>
+</html>
