@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        function check(){
+            var name = document.querySelector('#name');
+            console.dir(name);
+            console.log(name.value);
+            var telecom = document.getElementsByName('telecom');
+            console.dir(telecom);
+            console.log(telecom[0].checked);
+            console.log(telecom[1].checked);
+            console.log(telecom[2].checked);
+            var food = document.getElementsByName('food');
+            console.log(food[0].checked);
+            console.log(food[1].checked);
+            console.log(food[2].checked);
+            console.log(food[3].checked);
+
+            var telecom2 =document.querySelectorAll("input[name='telecom']:checked");
+            console.log(telecom2);
+            var food2 =document.querySelectorAll("input[name='food']:checked");
+            console.log(food2);
+
+            var search = document.querySelector('#search');
+            console.dir(search);
+            search.addEventListener('change',function(){
+                var search_text = document.createTextNode(this.value);
+                var br_tag = document.createElement('br');
+                document.getElementById('search_value').appendChild(search_text);
+                document.getElementById('search_value').appendChild(br_tag);
+            })
+        }
+    </script>
+</body>
+</html>
